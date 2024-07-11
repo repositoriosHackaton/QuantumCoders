@@ -1,0 +1,135 @@
+{
+  "intents": [
+    {
+      "tag": "despedida",
+      "patterns": ["Adios", "Nos vemos", "Hasta luego", "Bye"],
+      "responses": ["Adios, que tengas un buen dia", "Hasta luego, cuidate", "Nos vemos, ¡adios!"]
+    },
+    {
+      "tag": "estado",
+      "patterns": [
+        "¿Como estas?",
+        "¿Como te encuentras?",
+        "¿Que tal?",
+        "¿Como va todo?",
+        "¿Que tal te va?",
+        "¿Como te sientes hoy?"
+      ],
+      "responses": [
+        "Estoy bien, gracias por preguntar. ¿En que puedo ayudarte?",
+        "Todo bien por aqui. ¿En que puedo asistirte hoy?",
+        "¡Hola! Listo para ayudarte. ¿Que necesitas?",
+        "Aqui estoy, listo para asistirte. ¿En que puedo ayudarte?",
+        "Estoy bien, ¿y tu? ¿Que necesitas hoy?",
+        "Bien, gracias. ¿Como puedo ayudarte?",
+        "Todo en orden. ¿Que necesitas hoy?",
+        "¡Hola! Estoy listo para ayudarte. ¿En que puedo asistirte?"
+      ]
+    },
+    {
+      "tag": "bot_function",
+      "patterns": [
+        "¿Que haces?",
+        "¿Cual es tu funcion?",
+        "¿Que puedes hacer?",
+        "¿Que sabes hacer?",
+        "¿Para que sirves?"
+      ],
+      "responses": [
+        "Mi funcion es comparar precios de productos para ayudarte a encontrar la mejor oferta disponible."
+      ]
+    },
+    {
+      "tag": "gracias",
+      "patterns": ["Gracias", "Muchas gracias", "Te lo agradezco"],
+      "responses": ["De nada", "¡No hay problema!", "A la orden"]
+    },
+    {
+      "tag": "nombre",
+      "patterns": ["¿Como te llamas?", "¿Cual es tu nombre?", "Dime tu nombre"],
+      "responses": ["Soy IntelliPrice, tu asistente virtual", "Me llamo IntelliPrice", "Soy IntelliPrice, encantado de ayudarte"]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hola", "Hey", "Buenos dias", "Buenas tardes"],
+      "responses": ["Hola", "Hola, ¿como puedo ayudarte?", "Hola, ¿que necesitas?"]
+    },
+    {
+      "tag": "product_query",
+      "patterns": [
+        "¿Cual es el precio de [producto]?",
+        "Precio de [producto]",
+        "¿Cuanto cuesta [producto]?",
+        "¿Que precio tiene [producto]?",
+        "¿Puedes decirme el precio de [producto]?",
+        "¿A cuanto esta [producto]?",
+        "¿Que vale [producto]?",
+        "¿Cuanto debo pagar por [producto]?",
+        "Quiero saber el precio de [producto]",
+        "Dime el precio de [producto]",
+        "Me interesa el precio de [producto]",
+        "Necesito saber el precio de [producto]"
+      ],
+      "responses": ["Dejame buscar el precio para ti."]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "¿Necesito ayuda?",
+        "¿Puedes ayudarme con algo?",
+        "¿Estoy perdido, me puedes guiar?",
+        "¿Donde puedo encontrar mas informacion?"
+      ],
+      "responses": ["Claro, estare encantado de ayudarte. ¿En que puedo asistirte especificamente?"]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Quiero dar mi opinion",
+        "Me gustaria dejar un comentario",
+        "Tengo una sugerencia",
+        "Quiero expresar mi satisfaccion"
+      ],
+      "responses": ["Agradecemos tus comentarios. ¿Puedes proporcionar mas detalles para que podamos mejorar nuestro servicio?"]
+    },
+    {
+      "tag": "products_list",
+      "patterns": [
+        "¿Que productos tienes?",
+        "Lista de productos",
+        "¿Que vendes?",
+        "Muestra los productos disponibles",
+        "¿Que productos estan en el catalogo?",
+        "¿Que tienes en inventario?",
+        "¿Cuales son tus productos?",
+        "¿Que articulos tienes?",
+        "Enseñame tus productos",
+        "Quiero ver la lista de productos"
+      ],
+      "responses": ["Estos son los productos disponibles: "]
+    },
+    {
+      "tag": "sucursales_disponibles",
+      "patterns": [
+        "¿Cuales sucursales tienes disponibles?",
+        "Sucursales disponibles",
+        "Lista de sucursales",
+        "¿Que sucursales hay?",
+        "¿En que sucursales tienes productos?",
+        "¿Que tiendas tienes?"
+      ],
+      "responses": ["Estas son las sucursales disponibles: "]
+    },
+    {
+      "tag": "productos_sucursal",
+      "patterns": [
+        "¿Que productos hay en la sucursal [sucursal]?",
+        "Productos en la sucursal [sucursal]",
+        "¿Que tienen en la tienda [sucursal]?",
+        "¿Que productos puedo encontrar en [sucursal]?",
+        "¿Que hay disponible en la sucursal [sucursal]?"
+      ],
+      "responses": ["Estos son los productos disponibles en la sucursal [sucursal]: "]
+    }
+  ]
+}
