@@ -1,15 +1,7 @@
 # QuantumCoders
-En este espacio se sube el código creado para el grupo 
 
-Se debe agregar toda la documentación que ustedes consideren pertinente para la compresión de los modelos usados, la ejecución del código y los resultados obtenidos. 
-Puden, si desean, agregar imágenes o resultados obtenidos. 
+# IntelliPrice
 
-Recuerden que este readme es su puerta de entrada para su proyecto. 
-
-Un ejemplo puede ser: 
-# Nombre del Proyecto
-
-Breve descripción del proyecto.
 
 ## Tabla de contenidos
 
@@ -22,44 +14,36 @@ Breve descripción del proyecto.
 7. [Agradecimientos](#Agradecimientos)
 
 
-* Nombre del proyecto
+* IntelliPrice
+Este proyecto se basa en un sofware que permite conocer a los usuarios donde conseguir sus productos preferidos a menor precio. El usuario tendrá la capacidad de preguntar sobre: Qué productos hay en la base de datos, qué sucursales pueden consultar, que productos hay en la sucursal específica y en que sucursales se encuentra un producto a menor precio.
+![image](https://github.com/repositoriosHackaton/QuantumCoders/assets/158361126/83a1c5f0-5c7b-4317-a4df-58c01025e5fb)
 
-* Breve descripción del proyecto -> Alguna imagen o gif que muestre el proyecto
 
-* Arquitectura del proyecto + imagen
+* Arquitectura del proyecto
+El proyecto se basa en un entorno de python que involucra un procesamiento de lenguaje natural para las solicitudes del usuario, luego seguido de un modelo de redes neuronales para conocer que exactamente el usuario necesita y luego semuestra la respuesta a la solicitud de la mano de una interfaz gráfica amigable e intuitiva.
+![image](https://github.com/repositoriosHackaton/QuantumCoders/assets/158361126/4a34c6c9-a89b-47d2-9089-35f4d5cdc65c)
+
 
 * Proceso de desarrollo:
 
--Fuente del dataset
--Limpieza de datos (img que lo valide)
--Manejo excepciones/control errores
--¿Qué modelo de Machine Learning están usando?
--Estadísticos (Valores, gráficos, …)
--Métrica(s) de evaluación del modelo
+1. El dataset fue extraido de esta fuente: https://www.kaggle.com/datasets/tinnqn/precios-claros-precios-de-argentina?select=productos.csv
+2. En cuanto a la limpieza de datos se trabajo principalmente desde el csv en excel, pero, la mayor parte de la limpieza de los datos se realizo en la lematización de o y el procesado de los promts del usuario. Esto con procesamiento de lenguaje natural con ayuda de NLTK.
+![image](https://github.com/repositoriosHackaton/QuantumCoders/assets/158361126/02156bf8-641c-44a1-9a29-2cef634ca385)
+![image](https://github.com/repositoriosHackaton/QuantumCoders/assets/158361126/60cc9611-2782-4468-ae2d-21915dcb4cea)
+
+3. ¿Qué modelo de Machine Learning están usando?
+En este proyecto se está utilizando una red neuronal en tensorflow son 5 capas:
+- Capa de entrada densa con 128 neuronas con activación ReLU
+- Dos capas ocultas densas con activación  ReLU y dropout del 50% para evitar overfits
+- Capa densa con activación softmax con un número de neuronas igual a train_y
+Este modelo se entrena en base a intents que pasan por su debido procesamiento para entrenar el modelo.
+4. En este modelo se evalua en base a metrica de accuracy
 
 * Funcionalidades extra:
 
-Ejem 1: Implementación de chatbot
-- Tecnología/Herramientas usadas (Librería, Framework, …)
-- Arquitectura (img)
-- Indicar fuente del dataset
-- Limpieza de datos (ejem: se usó PLN + img que lo validen)
-- Manejo excepciones/control errores
-- En caso de usar un modelo de ML indicar ¿Qué modelo de Machine Learning están usando?
-- Estadísticos (Valores, gráficos, …)
-- Métrica(s) de evaluación del modelo
+Desarrollo de interfaz gráfica de usuario
+- Para el desarrollo de la interfaz gráfica se utilizó la librería tkinter siguiendo la línea gráfica utilizada a lo largo del proyecto.
+![image](https://github.com/repositoriosHackaton/QuantumCoders/assets/158361126/3185a247-7750-4e3f-856c-517128e087e1)
 
-Ejem 2: Integración del proyecto en una pág web
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
 
-Ejem 3: Integración del proyecto en un canal WhatsApp, Discord, Telegram, Correo, …
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
 
-Ejem 4: Desarrollo de interfaz gráfica de usuario
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
-
-Ejem …: …
-- Tecnología/Herramientas usadas …
